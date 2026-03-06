@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+
+let nome = (prompt("Digite seu nome: "));
+let AV1 = parseFloat(prompt("Digite sua nota da AV1: "));
+let AV2 = parseFloat(prompt("Digite sua nota da AV2: "));
+let frequ = parseFloat(prompt("Digite sua frequancia: "));
+let notaParcial = (AV1 + AV2) / 2 ;
+
+if(notaParcial < 4){
+    console.log("Reprovado na Parcial.");
+}
+else{
+    let AV3 = parseFloat(prompt("Digite sua nota da AV3"));
+    let notaFinal = (notaParcial + AV3) / 2;
+ if(notaFinal >= 5 && frequ >= 75){
+    console.log("Parabéns " + nome + " você foi aprovado com sua nota "+notaFinal+".")
+ }
+ else{
+    console.log("Reprovado na Nota final.")
+ }
+}
+
+</script>
